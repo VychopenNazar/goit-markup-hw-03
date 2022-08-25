@@ -9,27 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <!--кінець шрифтів-->
+
+    <!--нормалізатор стилів-->
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <!-- Основні стилі -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a class="logo-top" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="navigate">
-          <li><a class="navigate-link" href="./index.html">Студія</a></li>
-          <li><a class="navigate-link now" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="navigate-link" href="">Контакти</a></li>
+      <div class="container">
+        <nav>
+          <a class="logo-top" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="navigate">
+            <li class="navigate-item"><a class="navigate-link now" href="./index.html">Студія</a></li>
+            <li class="navigate-item"><a class="navigate-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="navigate-item"><a class="navigate-link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li>
+            <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="contact-tel" href="tel:+380961111111">+38(096) 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li>
-          <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="contact-tel" href="tel:+380961111111">+38(096) 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
