@@ -54,13 +54,14 @@ ul {
 }
 
 .container {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 /* хедер */
 
 .header {
     background-color: var(--main-bg-clr);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .headrer-logo {
@@ -133,7 +134,6 @@ ul {
 }
 
 .media-list {
-    display: list-item;
     font-style: normal;
 }
 
@@ -223,7 +223,6 @@ ul {
 .work-title {
     font-size: 36px;
     line-height: calc(42 / 36);
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-clr);
 }
@@ -231,7 +230,7 @@ ul {
 /* Команда */
 
 .team {   
-    background: #F5F4FA;
+    background: var(--btn-bg-clr);
 }
 
 .team-title {
@@ -250,7 +249,6 @@ ul {
 .team-name {
     font-size: 16px;
     line-height: calc(19 / 16);
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-clr);
 }
@@ -258,7 +256,6 @@ ul {
 .team-text {
     font-size: 16px;
     line-height: calc(19 / 16);
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--txt-clr);
 }
