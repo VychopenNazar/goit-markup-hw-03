@@ -1,16 +1,30 @@
 :root {
+    
+    /* Кольори тексту */
+
     --main-clr: #2196F3;
     --title-clr: #212121;
     --txt-clr: #757575;
+    --second-txt-color: #000000;
+    
+    /* Кольори фону */
+
     --main-bg-clr: #ffffff;
     --second-bg-clr: #2F303A;
-    --second-txt-color: #000000;
     --btn-bg-clr: #F5F4FA;
+    /* Шрифти */
+
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway';
+
+    /* Заокруглення */
+    
     --border-radius: 4px;
+        
 }
 body {
     color: var(--txt-clr);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     background-color: var(--main-bg-clr);
 }
 
@@ -50,7 +64,7 @@ ul {
 }
 
 .headrer-logo {
-    font-family: 'Raleway';
+    font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -111,7 +125,7 @@ ul {
 }
 
 .footer-logo {
-    font-family: 'Raleway';
+    font-family: var(--logo-font);
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
@@ -162,7 +176,6 @@ ul {
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-bg-clr);
