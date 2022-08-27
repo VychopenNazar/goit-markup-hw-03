@@ -71,8 +71,8 @@ ul {
 }
 
 .container {
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -230,19 +230,20 @@ section {
 /* Шапка */
 
 .hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-bg-clr);
   background: var(--second-bg-clr);
   padding: 200px 0;
   text-align: center;
 }
 
 .hero-title {
-  margin-bottom: 0 auto 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-bg-clr);
+  margin-bottom: 30px;
+  padding: 0 252px;
 }
 
 .hero-button {
@@ -329,8 +330,6 @@ section {
 }
 
 .team .container {
-  display: flex;
-  flex-direction: column;
   padding: 94px;
 }
 
@@ -340,9 +339,13 @@ section {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-list {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 4);
 }
 
 .team-item {
@@ -350,7 +353,7 @@ section {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
   width: 270px;
-  height: 368px;
+  text-align: center;
 }
 
 .team-name {
@@ -358,6 +361,7 @@ section {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--title-clr);
+  margin: 30px 0 10px;
 }
 
 .team-text {
@@ -365,15 +369,29 @@ section {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--txt-clr);
+  margin-bottom: 30px;
 }
 
 /* Кнопки навігації */
+
+.portfolio {
+  margin: 94px;
+}
+
+.portfolio-list-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-basis: calc((100% - 8px) / 5);
+  padding-bottom: 50px;
+}
 
 .btn {
   background: var(--btn-bg-clr);
   border-radius: var(--border-radius);
   color: var(--title-clr);
   cursor: pointer;
+  border: 0;
 }
 
 .btn:hover,
@@ -384,11 +402,21 @@ section {
 
 /* Головне портфоліо */
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 9);
+}
+
 .portfolio-name {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-clr);
+  margin: 20px 0 4px;
+  padding-left: 24px;
 }
 
 .portfolio-text {
@@ -396,4 +424,6 @@ section {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--txt-clr);
+  margin-bottom: 20px;
+  padding-left: 24px;
 }
